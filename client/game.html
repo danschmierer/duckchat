@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/main.css"></link>
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta names="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	</head>
+	<body>
+		<div id="water"></div>
+
+		<div id="choose">
+			<div id="text"><span>CHOOSE A DUCK</span></div>
+			<div id="ducks">
+				<div id="1" class="duck d1"></div>
+				<div id="2" class="duck d2"></div>
+				<div id="3" class="duck d3"></div>
+				<div id="4" class="duck d4"></div>
+				<div id="5" class="duck d5"></div>
+			</div>
+		</div>
+
+		<div id="container">
+		</div>
+
+		<script type="text/javascript" src="js/utils/jquery.js"></script>
+		<script src="http://localhost:8000/socket.io/socket.io.js"></script>
+		<script type="text/javascript" src="js/utils/requestAnimationFrame.js"></script>
+		<script type="text/javascript" src="js/utils/AudioManager.js"></script>
+		<script type="text/javascript" src="js/Player.js"></script>
+		<script type="text/javascript" src="js/client.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				var client = new Client();
+				if(client) {
+					client.init();
+				}
+			});
+		</script>
+
+	</body>
+</html>

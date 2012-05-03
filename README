@@ -1,0 +1,31 @@
+dependencies:
+node.js
+socket.io
+
+to install
+
+1. move project under htdocs
+
+
+to run server:
+
+1. install node, socket.io
+
+2. terminal to main directory:
+
+3. ~ node server/server.js
+
+
+to run client:
+
+load client/game.html in browser
+
+note: 
+client runs as localhost - can only access locallly
+to run client as an ip (so that other devices can access)
+
+1. update client.game.html:
+<script src="http://localhost:8000/socket.io/socket.io.js"></script>
+socket = io.connect("http://localhost", {port:8000, transports:["websocket"]});
+to use ip/site name
+

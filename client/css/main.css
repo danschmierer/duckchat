@@ -1,0 +1,95 @@
+* {
+	margin:0;
+	padding:0;
+}
+
+html, body {
+	width:100%;
+	height:100%;
+	padding:0;
+	margin:0;
+	border:0;
+	-webkit-user-select:none;
+	-webkit-text-size-adjust:none;
+	font-family:helvetica;
+	background-color:grey;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	overflow:hidden;
+}
+
+#container {
+	width:100%;
+	height:100%;
+}
+
+#water {
+	position:absolute;
+	top:125px;
+	left:0px;
+	background-color:blue;
+	color:blue;
+	width:100%;
+	height:100%;
+	pointer-events:none;
+	z-index:0;
+}
+
+#choose {
+	position:relative;
+	width:200px;
+	height:200px;
+	background-color:brown;
+	border: solid 5px pink;
+	border-radius:5px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:10%;
+	text-align:center;
+}
+
+#text {
+	position:relative;
+	margin-top:20px;
+	font-size:32px;
+	color:pink;
+}
+
+#ducks {
+	position:relative;
+	margin-top:20%;
+}
+
+.user {
+	position:fixed;
+	background-repeat:no-repeat;
+	width:32px;
+	height:28px;
+}
+.duck {
+	display:inline-block;
+	background-repeat:no-repeat;
+	width:32px;
+	height:28px;
+}
+.d1 {
+	background-image:url('../img/duck.png');
+}
+.d2 {
+	background-image:url('../img/duck_1.png');
+}
+.d3 {
+	background-image:url('../img/duck_2.png');
+}
+.d4 {
+	background-image:url('../img/duck_3.png');
+}
+.d5 {
+	background-image:url('../img/duck_4.png');
+}
+
+.flip {
+	-moz-transform: scaleX(-1);
+	-o-transform: scaleX(-1);
+	-webkit-transform: scaleX(-1);
+	transform: scaleX(-1);
+}
