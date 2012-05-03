@@ -1,3 +1,5 @@
+real simple nodejs chat example, done for fun.
+
 dependencies:
 node.js
 socket.io
@@ -7,7 +9,7 @@ to install
 1. move project under htdocs
 
 
-to run server:
+to run server
 
 1. install node, socket.io
 
